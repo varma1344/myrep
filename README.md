@@ -1,16 +1,13 @@
+"""
+function which return max element in a given list
 
 """
-Returns all elements that are odd
-
-
-"""
-
 
 def myfunc(lis):
-    list=[]
+    max=lis[0]
     for i in lis:
-        if i%2==1:
-           list.append(i)
+        if i>max:
+           max=i
 
-    return list
+    return max
 print(myfunc([1,11,7,8,-1,6]))
